@@ -1,4 +1,4 @@
-import StudentClass as sc
+import studentClass as sc
 
 studentid = 1001
 name = 'John'

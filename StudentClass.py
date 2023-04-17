@@ -2,18 +2,17 @@ from datetime import date
 
 
 class Student:
-
-    def __init__(self, id, name, dob, classification, age, register):
+    def __init__(self, id, name, dob, classification):
         self.__studentid = id
         self.__name = name
         self.__dob = dob
-        self.__class = classification
+        self.__classification = classification
         self.__age = 0
         self.__register = ''
 
     def calc_age(self):
         today = date.today()
-        dob = dob.split('/')
+        dob = self.__dob.split('/')
         dob_year = int(dob[2])
         self.__age = today.year - dob_year
 
